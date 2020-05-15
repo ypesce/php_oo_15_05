@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="style.css">
 <?php
 try
 {
@@ -8,6 +7,7 @@ catch (Exception $e)
 {
 	die('Echec de la connexion a la base de donnees ' . $e->getMessage ());
 }
+include_once 'header.php'
 ?>
 	<p>Recettes:</p>
 <?php

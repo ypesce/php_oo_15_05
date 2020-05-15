@@ -1,25 +1,26 @@
 <html>
 <head>
 	<title>Ajout de recette de ravioles</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
+<?php
+include_once 'header.php'
+?>
 <div>
+
 	<h1>Ajout de recette de ravioles</h1>
-	<div>
-		<h2>/h2>
+	<div
 		<hr/>
-		<form action="" method="post">
+		<form class="form" action="" method="post">
 			<label>Nom: </label>
-			<input type="text" name="title" id="title" required="required"><br /><br />
+			<input class="form-control" type="text" name="title" id="title" required="required"><br /><br />
 			<label>Description:</label>
-			<input type="text" name="description" id="description" required="required"><br/><br />
+			<input class="form-control" type="text" name="description" id="description" required="required"><br/><br />
 			<label>Date</label>
-			<input type="date" name="date" id="date" required="required"/><br/><br />
+			<input class="form-control" type="date" name="date" id="date" required="required"/><br/><br />
 			<label>Img link:</label>
-			<input type="text" name="img_link" id="img_link" required="required"/><br/><br />
-			<input type="submit" value="Submit" name="submit"/><br />
+			<input class="form-control" type="text" name="img_link" id="img_link" required="required"/><br/><br />
+			<input  class="btn btn-primary" type="submit" value="Submit" name="submit"/><br />
 		</form>
 	</div>
 
