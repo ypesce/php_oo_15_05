@@ -9,7 +9,7 @@ catch (Exception $e)
 	die('Echec de la connexion a la base de donnees ' . $e->getMessage ());
 }
 ?>
-	<p>Recette:</p>
+	<p>Recettes:</p>
 <?php
 $callback = $db->query('SELECT * FROM ravioles');
 while ($data = $callback->fetch()) {
