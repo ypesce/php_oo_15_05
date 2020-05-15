@@ -9,8 +9,8 @@ img {
 .grid {
     height: 190px;
     display: grid;
-    grid-template-columns: 1fr 2fr 0.5fr 2fr;
-    grid-template-areas: "a b c d";
+    grid-template-columns: 1fr 5fr 0.5fr 2fr 1fr;
+    grid-template-areas: "a b c d e";
     border: 1px solid black;
 }
 
@@ -22,8 +22,10 @@ img {
 .c { grid-area: c; }
 
 .d { grid-area: d; }
-
-.a, .b, .c, .d   {
+.e {
+    grid-area: e;
+}
+.a, .b, .c, .d, .e   {
     display:flex;
     align-items: center;
     border: 1px solid black;

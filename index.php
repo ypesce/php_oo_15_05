@@ -19,9 +19,9 @@ while ($data = $callback->fetch()) {
 		<div class="b"><?php echo $data['description'] ?></div>
 		<div class="c"><?php echo $data['date'] ?></div>
 		<div class="d"><img src="<?php echo $data['img_link']?>"></div>
+        <div class="e"><a href="delete.php?id=<?php echo($data['id']);?>">Delete</a></div>
 	</div>
 
 	<?php
 }
-
 $callback->closeCursor ();
